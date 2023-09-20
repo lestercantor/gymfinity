@@ -1,3 +1,339 @@
-h1 {
-    color:red;
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@300&display=swap');
+
+html {
+    margin:0;
+    padding:0;
+    border:0;
+}
+/* styling all a tags to fit my theme of the website instead of having default blue links */
+a {
+    color: rgb(224, 224, 224);
+}
+
+a:hover {
+    color:rgb(185, 185, 185);
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:rgb(24, 24, 24);
+    color:rgb(224, 224, 224)
+}
+
+/* navbar styling */
+.navbar {
+    margin-bottom: 0;
+    border:0;
+    z-index: 1;
+    width:100%;
+}
+
+#logo {
+    font-size:150%;
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing: 2px;
+    padding-left: 5px;
+}
+/* hero image and covering text styling */
+#hero-image {
+    height: 550px;
+    max-width: 100%;
+    background: url(../images/hero-image.jpg) no-repeat center center;
+}
+
+.hero-outer-container {
+    height: 550px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#cover-text, #cover-text h3 {
+
+    font-weight: bold;
+    font-size:140%
+}
+
+.opaque-overlay {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#cover-text {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#cover-text p {
+    font-family: 'Inter', sans-serif;
+}
+
+#cover-text a {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+/* styling for about section on why to join the gym */
+
+.why-join-container {
+    height:600px;
+}
+
+#welcome {
+    margin: 30px 0;
+    font-size: 230%;
+    letter-spacing: 3px;
+}
+
+#left-about-section {
+    float: left;
+    width: 33%;
+}
+
+#right-about-section {
+    width: 33%;
+}
+
+#centre-about {
+    float:left;
+    width: 33%;
+    margin: 0 auto;
+}
+#left-about-header {
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+#right-about-header {
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+#right-about-header h2, #left-about-header h2 {
+    font-size: 140%;
+    letter-spacing: 2px;
+}
+
+#right-about-header p {
+    text-align: right;
+}
+
+#circle-container {
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border: solid white 1px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+
+#circle-cover-bg {
+    background:url(../images/cover-image.png) no-repeat center center;
+    height:100%;
+    border-radius: 50%;
+}
+
+/* styling for classes and schedule */
+
+#classes-title {
+    text-align:center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.classes-schedule h3 {
+    font-size: 110%;
+}
+
+.classes-schedule h2 {
+    font-size: 150%;
+    letter-spacing: 2px;
+}
+
+.classes-schedule {
+    background: url(../images/gym-inside.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.classes-schedule div {
+    width: 19%;
+    background-color: rgba(0,0,0,0.7);
+    height: 300px;
+    text-align: center;
+    float:left;
+    padding: 30px 10px 15px 10px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.classes-schedule li {
+    background-color:rgb(119, 119, 119);
+    color:white;
+    font-weight: bold;
+}
+
+/* footer styling */
+footer {
+    height: 200px;
+}
+
+.left-info {
+    height:200px;
+    width:50%;
+    float:left;
+}
+
+.right-info {
+    width: 50%;
+    float:right;
+    position:relative;
+}
+#social-networks {
+    text-align: center;
+}
+
+#social-networks li {
+    display:inline;
+}
+
+#social-networks i {
+    font-size: 300%;
+    margin: 1%;
+    padding: 5%;
+}
+
+#gym-info {
+    letter-spacing: 2px;
+    font-size: 120%;
+    list-style-type: none;
+    padding:0;
+    margin:2%;
+    font-weight: bold;
+}
+#gym-info li {
+    font-weight:normal;
+}
+
+.open {
+    text-align: center;
+    float:right;
+}
+
+/* styling for equipment and facilities page*/
+
+.equipment h2 {
+    margin: 30px 0;
+    clear:both;
+}
+
+.facilities i {
+    font-size: 150%;
+}
+.facilities {
+    padding-top: 30px;
+    font-size: 110%;
+    font-weight:bold
+}
+
+/* styling for sign up form */
+
+.form-section {
+    clear: both;
+    background: url(../images/formbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
+
+.signup-form {
+    margin-top: 150px;
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.6);
+    max-width: 400px;
+    position: absolute;
+    left: 10%;
+    padding: 30px;
+}
+
+.signup-form h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+    font-size: 170%;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
+
+/* media queries */
+@media screen and (max-width: 1000px){
+    #left-about-section, #right-about-section { 
+        float:left;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .classes-schedule div {
+        width:100%;
+        clear:both;
+        height:150%;
+        border-style:solid;
+        border-bottom-width: 1px;
+        border-bottom-color: white;
+        margin:0 auto;
+    }
+
+    #right-about-header p {
+        text-align: center;
+    }
+    #centre-about {
+        display:none;
+    }
+
+    .left-info, .right-info {
+        width: 100%;
+        padding:0;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #welcome {
+        font-size: 140%;
+    }
+
+    .signup-form {
+        width: 350px;
+    }
 }

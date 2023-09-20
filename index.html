@@ -1,11 +1,164 @@
 <!DOCTYPE html>
 <html>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>My Website</title>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <title>Gymfinity</title>
+    </head>
     <body>
-        <h1>Hello World!</h1>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="logo" href="index.html">Gymfinity</a>
+
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul id="menu" class="navbar-nav me-auto mb-2 mb-sm-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="more.html">Equipment & Facilities</a></li>
+                        <li class="nav-item d-block d-sm-none"><a class="nav-link" href="signup.html">Sign in / Sign up</a></li>
+                    </ul>
+                </div>
+                <div class="d-none d-md-block">
+                    <a class="nav-item" href="signup.html">Sign in / Sign up</a>
+                </div> 
+            </div>
+        </nav>
+
+        <section class="hero-outer-container">
+            <div class="opaque-overlay"></div>
+            <div id="hero-image"></div>
+            <div id="cover-text">
+                <h3>Transform your life,</h3>
+                <h3>one rep at a time.</h3>
+                <hr>
+                <p class="lead">Sign up today for £0 joining fee</p>
+                <a class="btn btn-success btn-lg" href="signup.html">Sign Up!</a>
+            </div>
+        </section>
+
+        <section class="why-join-container container">
+            <h2 id="welcome">To Gymfinity, And beyond!</h2>
+            <div class="row" id="left-about-section">
+                <div class="cols-12 cols-md-6" id="left-about-header">
+                    <h2>Value for money <i class="fa-solid fa-money-bills"></i></h2>
+                    <hr>
+                    <p>Not everybody has access to high quality and a wide range of gym equipment. Here at Gymfinity we can provide just that, so you can optimise your workouts or cycle through a variety of our equipment.</p>
+                </div>
+                <div class="cols-12 cols-md-6" id="left-about-header">
+                    <h2>Flexibility <i class="fa-solid fa-calendar-check"></i></h2>
+                    <hr>
+                    <p>At Gymfinity, you can ensure that you have time for fitness into your busy schedule. We offer 24/7 access and digital workouts that you can follow to suit your fitness needs.</p>
+                </div>
+            </div>
+
+            <div id="centre-about">
+                <div id="circle-container">
+                    <div id="circle-cover-bg"></div>
+                </div>
+            </div>
+
+            <div class="row" id="right-about-section">
+                <div class="cols-12 cols-md-6" id="right-about-header">
+                    <h2>Everybody is welcome <i class="fa-solid fa-users"></i></h2>
+                    <hr>
+                    <p>We welcome everybody, regardless of ability, age, size, fitness goals - Gymfinity welcomes you without judgement. We are proud that you choose us to keep fit and we will make sure to look after our members.</p>
+                </div>
+                <div class="cols-12 cols-md-6" id="right-about-header">
+                    <h2>Ready to assist <i class="fa-solid fa-handshake-angle"></i></h2>
+                    <hr>
+                    <p>We are committed to helping you achieve your fitness goals, offering support our members on their fitness journey. With our team of experienced personal trainers, you'll receive personalised guidance and expert advice to maximize your results.</p>
+                </div>
+            </div>
+        </section>
+
+        <h3 class="text-center"id="classes-title">What's on?</h3>
+        <section class="classes-schedule">
+            <div>
+                <h2>Monday <i class="fa-solid fa-dumbbell"></i></h2>
+                <h3>HIIT Training</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">9:00</li>
+                    <li class="list-group-item">14:00</li>
+                    <li class="list-group-item">18:00</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Tuesday <i class="fa-solid fa-person-running"></i></h2>
+                <h3>Cardio</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">9:00</li>
+                    <li class="list-group-item">12:00</li>
+                    <li class="list-group-item">14:00</li>
+                    <li class="list-group-item">18:00</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Wednesday <i class="fa-solid fa-dumbbell"></i></h2>
+                <h3>Strength training</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">9:00</li>
+                    <li class="list-group-item">14:00</li>
+                    <li class="list-group-item">18:00</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Thursday <i class="fa-solid fa-person-running"></i></h2>
+                <h3>Cardio</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">9:00</li>
+                    <li class="list-group-item">12:00</li>
+                    <li class="list-group-item">14:00</li>
+                    <li class="list-group-item">18:00</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Friday <i class="fa-solid fa-dumbbell"></i></h2>
+                <h3>HIIT Training</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">9:00</li>
+                    <li class="list-group-item">14:00</li>
+                    <li class="list-group-item">18:00</li>
+                </ul>
+            </div>
+        </section>
+
+        
+        <footer class="social-information">
+                <div class="left-info">
+                    <ul id="social-networks">
+                        <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-square-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                      </ul>
+                </div>
+    
+                <div class="right-info">
+                    <ul class="open" id="gym-info">Contact:
+                        <li>Telephone:</li>
+                        <li>01782 11111</li>
+                    </ul>
+                    <p class="open" id="gym-info">Open 24/7</p>
+                    <ul id="gym-info">Location:
+                        <li>12 Fake Street</li>
+                        <li>Tunstall</li>
+                        <li>Stoke-on-Trent</li>
+                        <li>England</li>
+                        <li>United Kingdom</li>
+                        <li>ST6 1LE</li>
+                    </ul>
+                </div>
+
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
