@@ -44,7 +44,9 @@ body {
 #hero-image {
     height: 550px;
     max-width: 100%;
-    background: url(/assets/images/hero-image.jpg) no-repeat center center;
+    background-image: url(/assets/images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .hero-outer-container {
@@ -148,7 +150,7 @@ body {
 }
 
 #circle-cover-bg {
-    background:url(assets/image/cover-image.png) no-repeat center center;
+    background:url(/assets/images/cover-image.png) no-repeat center center;
     height:100%;
     border-radius: 50%;
 }
@@ -171,7 +173,7 @@ body {
 }
 
 .classes-schedule {
-    background: url(assets/images/gym-inside.png);
+    background: url(/assets/images/gym-inside.png);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -262,7 +264,7 @@ footer {
 
 .form-section {
     clear: both;
-    background: url(assets/images/formbg.jpg);
+    background: url(/assets/images/formbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
