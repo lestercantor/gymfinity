@@ -26,7 +26,7 @@ For a comfortable user experience, features will include:
 ### Structure
 The website will have 3 pages: Home -> Equipment & Facilities -> Sign up. Users can scroll through the home page to find most of the information as it will be the main body of information. Blocks of text will be kept short with images and icons to keep the user's attention and to not overwhelm them. There will be a simple sign up form for users to sign up.
 ### Skeleton
-[Wireframe Mockup](../gymfinity/docs/wireframe%20mockup.png)
+[Wireframe Mockup](/docs/wireframe%20mockup.png)
 ### Surface
 I will have a dark navigation bar, contrasted with a light background for the main body of the page so the navigation bar clearly anchors the top of the page for users to see. The light background for the main page is so that the information is clearly striking to attract the attention of the user. 
 
