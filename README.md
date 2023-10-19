@@ -53,6 +53,8 @@ There is a footer for social media links and the basic information about the gym
 
 From the [w3c validator website](https://validator.w3.org/nu/?doc=https%3A%2F%2Flestercantor.github.io%2Fgymfinity%2Findex.html), I have errors and warnings about duplicate ID's used, however, I am not sure of a solution to the problem as I needed the same styles for the tags that were used. Since I needed the same styles for the footers, the same errors and warnings are across each page. Another issue I am not sure of how to fix is to make the paragraph tag in the footer to be part of the unordered list, as I needed the list style and tags to make the footer content as it is.
 
+To fix these errors, I realised that ID's are used for unique changes, so having multiple ID's being used was against the validity in the HTML validation. My solution to fix this was to make them a class so that multiple elements can have the styling that I want.
+
 ### CSS Validation
 ![Alt text](docs/css-validation.png)
 Passing my direct code through [w3c jigsaw css validator](https://jigsaw.w3.org/css-validator/validator), my CSS stylesheet passed with no errors found.

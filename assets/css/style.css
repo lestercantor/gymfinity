@@ -117,25 +117,25 @@ body {
     width: 33%;
     margin: 0 auto;
 }
-#left-about-header {
+.left-about-header {
     float: right;
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
 }
-#right-about-header {
+.right-about-header {
     float: left;
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
 }
 
-#right-about-header h2, #left-about-header h2 {
+.right-about-header h2, .left-about-header h2 {
     font-size: 140%;
     letter-spacing: 2px;
 }
 
-#right-about-header p {
+.right-about-header p {
     text-align: right;
 }
 
@@ -227,7 +227,7 @@ footer {
     padding: 5%;
 }
 
-#gym-info {
+.gym-info {
     letter-spacing: 2px;
     font-size: 120%;
     list-style-type: none;
@@ -235,7 +235,7 @@ footer {
     margin:2%;
     font-weight: bold;
 }
-#gym-info li {
+.gym-info li {
     font-weight:normal;
 }
 
@@ -316,7 +316,7 @@ footer {
         margin:0 auto;
     }
 
-    #right-about-header p {
+    .right-about-header p {
         text-align: center;
     }
     #centre-about {
