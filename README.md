@@ -49,8 +49,8 @@ I have a navigation bar so it's easy for users to navigate through the website. 
 ## Footer
 There is a footer for social media links and the basic information about the gym which is across all pages so the user has easy access to them at any time.
 
-## Carousel
-In the wireframe mockup, I have a box section dedicated to showcase the equipment provided. My idea was to have a carousel of images showing gym equipment (taken from a royalty free website) and the user can click/tap the arrows to scroll through the images easily. This could be done through Bootstrap as it has simple carousel component which can be found through [this link](https://getbootstrap.com/docs/5.0/components/carousel/). 
+## Carousel showcasing gym equipment
+In the wireframe mockup, I have a boxed section dedicated to showcase the equipment provided. My idea was to have a carousel of images showing gym equipment (taken from a royalty free website) and the user can click/tap the arrows to scroll through the images easily. This could be done through Bootstrap as it has simple carousel component which can be found through [this link](https://getbootstrap.com/docs/5.0/components/carousel/). 
 Some of the images that were part of the carousel blended in with the carousel slider arrows which did not make for a good user experience. As such, I used darker arrows and lighter images to contrast each other making it clearly visible to the user. 
 
 As a side note: since the carousel is a component of Bootstrap, the only colours they provide are black and white, where black has to be specified through the class "carousel-dark". With some research, I found that you can change the colour of the carousel slider arrow by overriding the class "carousel-control-next-icon" and giving it the background image of: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") - changing " fill='%23xxx' ", where xxx is a hexadecimal colour code.
