@@ -102,6 +102,7 @@ Passing my direct code through [w3c jigsaw css validator](https://jigsaw.w3.org/
 # Responsiveness Testing
 For the responsiveness testing, I mainly used the dimensions for Samsung Galaxy A51/71, as I assume my intended audience will have a modern and affordable smartphone. I collapsed the navigation bar, as the texts and buttons would fill up the top of the user's screen, making for a bad user experience.
 ![mobile navbar](/docs/collapsed%20navbar.png)
+
 When the user presses the burger icon, the navigation bar reveals the other pages that the user can navigate to: 
 ![revealed mobile navbar](/docs/revealed%20navbar.png)
 
