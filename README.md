@@ -53,7 +53,11 @@ There is a footer for social media links and the basic information about the gym
 
 From the [w3c validator website](https://validator.w3.org/nu/?doc=https%3A%2F%2Flestercantor.github.io%2Fgymfinity%2Findex.html), I have errors and warnings about duplicate ID's used, however, I am not sure of a solution to the problem as I needed the same styles for the tags that were used. Since I needed the same styles for the footers, the same errors and warnings are across each page. Another issue I am not sure of how to fix is to make the paragraph tag in the footer to be part of the unordered list, as I needed the list style and tags to make the footer content as it is.
 
-To fix these errors, I realised that ID's are used for unique changes, so having multiple ID's being used was against the validity in the HTML validation. My solution to fix this was to make them a class so that multiple elements can have the styling that I want.
+To fix these errors, I realised that ID's are used for unique changes, so having multiple ID's being used was against the validity in the HTML validation. My solution to fix this was to make them a class so that multiple elements can have the styling that I want. 
+The other I needed to fix were 2 cases of where a <p> element was not a child of the <ul> element. My solution was to make the <p> element a child of an <li> element, the <ul> element expects an <li> element as its child - which lets me embed a <p> element inside the <li> element so that I can keep the layout as it was before whilst maintaining validity. Since this was an error in the footer, which I have across all pages, the changes have been adjusted to each page. 
+
+![Alt text](docs/signup-page-validation.png)
+Whilst validating all of my pages, I came across these errors in the sign up page. Being able to validate through direct input makes it easier to see HTML errors so that they can be easily rectified without waiting for deployment. These particular errors were easy to fix as I just needed to delete trailing slashes and a rogue </i> on line 33 as mentioned by the validator. 
 
 ### CSS Validation
 ![Alt text](docs/css-validation.png)
