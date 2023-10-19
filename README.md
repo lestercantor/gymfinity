@@ -119,6 +119,7 @@ At the very bottom, the user is still able to see the footer and all of its cont
 ### Equipment & Facilities Page
 In the equipment & facilities page, the user is still able to clearly see the gym equipment, even though the images on the carousel are made smaller to fit the screen for the smartphone. On the desktop version, the facilities of the gym could fit in one row, but on the mobile screen, I made sure to fit the text and icons into two rows, so the icons and text would not have to shrink.
 ![mobile equipment & facilities](/docs/mobile%20equipment&facilities.png)
+
 The carousel component still works on the mobile screen as the Bootstrap framework is designed to be responsive.
 
 ### Sign Up Page
