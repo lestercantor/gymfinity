@@ -93,7 +93,13 @@ To fix these errors, I realised that ID's are used for unique changes, so having
 The other I needed to fix were 2 cases of where a `p` element was not a child of the `li` element. My solution was to make the `p` element a child of an `li` element, the `ul` element expects an `li` element as its child - which lets me embed a `p` element inside the `li` element so that I can keep the layout as it was before whilst maintaining validity. Since this was an error in the footer, which I have across all pages, the changes have been adjusted to each page. 
 
 ![errors in html sign up page validator testing](docs/signup-page-validation.png)
-Whilst validating all of my pages, I came across these errors in the sign up page. Being able to validate through direct input makes it easier to see HTML errors so that they can be easily rectified without waiting for deployment. These particular errors were easy to fix as I just needed to delete trailing slashes and a rogue </i> on line 33 as mentioned by the validator. 
+Whilst validating all of my pages, I came across these errors in the sign up page. Being able to validate through direct input makes it easier to see HTML errors so that they can be easily rectified without waiting for deployment. These particular errors were easy to fix as I just needed to delete trailing slashes and a rogue `</i>` on line 33 as mentioned by the validator. 
+
+![home page passed html validator](/docs/home%20html%20pass.png)
+
+![equipment&facilities page passed html validator](/docs/equipment&facilities%20html%20pass.png)
+
+![signup page passed html validator](/docs/signup%20html%20pass.png)
 
 ### CSS Validation
 ![css validation pass](docs/css-validation.png)
