@@ -90,7 +90,7 @@ As a recurring user, the information I have seen the first time I visited is sti
 From the [w3c validator website](https://validator.w3.org/nu/?doc=https%3A%2F%2Flestercantor.github.io%2Fgymfinity%2Findex.html), I have errors and warnings about duplicate ID's used, however, I am not sure of a solution to the problem as I needed the same styles for the tags that were used. Since I needed the same styles for the footers, the same errors and warnings are across each page. Another issue I am not sure of how to fix is to make the paragraph tag in the footer to be part of the unordered list, as I needed the list style and tags to make the footer content as it is.
 
 To fix these errors, I realised that ID's are used for unique changes, so having multiple ID's being used was against the validity in the HTML validation. My solution to fix this was to make them a class so that multiple elements can have the styling that I want. 
-The other I needed to fix were 2 cases of where a `p` element was not a child of the `li` element. My solution was to make the `p` element a child of an `li` element, the `ul` element expects an `li` element as its child - which lets me embed a `p` element inside the `li` element so that I can keep the layout as it was before whilst maintaining validity. Since this was an error in the footer, which I have across all pages, the changes have been adjusted to each page. 
+The other I needed to fix were 2 cases of where a `p` element was not a child of the `li` element. My solution was to make the `p` element a child of an `li` element, the `ul` element expects an `li` element as its child - which lets me embed a `p` element inside the `li` element so that I can keep the layout as it was before whilst maintaining validity. Since this was an error in the footer, which I have across all pages, the changes have been adjusted to each page. This solution is credited to a user named "mtf" in [this forum post](https://discuss.codecademy.com/t/what-happens-if-we-put-raw-text-directly-in-the-ul-element/297396/15)
 
 ![errors in html sign up page validator testing](docs/signup-page-validation.png)
 
@@ -135,6 +135,38 @@ The carousel component still works on the mobile screen as the Bootstrap framewo
 ### Sign Up Page
 The sign up form is now centred on the mobile screen instead of it being offset like the desktop.
 ![mobile sign up page](/docs/mobile%20sign%20up%20page.png)
+
+### Further Responsive Testing
+With Google Chrome Developer Tools, I am able to switch between different screen dimensions, to test responsiveness depending on what the user may be using. 
+I used these emulated devices that the developer tools provided:
+* iPhone SE
+* iPhone XR
+* iPhone 12 Pro
+* Pixel 5
+* Samsung Galaxy S8+
+* Samsung Galaxy S20 Ultra
+* iPad Air
+* iPad Mini
+* Surface Pro 7
+* Galaxy Fold
+
+While testing with these emulated screen devices, I notced that the `iPhone SE`, `Samsung Galaxy S8+` and `Galaxy Fold` had a small width size. 
+
+![form and footer in a smaller screen](/docs/form%20and%20footer%20small%20screen.png)
+
+All three devices have the problem the form background looks like it stretches off screen and the footer contents doesn't align well. My solution for this was to add a media query for devices that have a width of 393px. I chose 393px, because the `Pixel 5` and `iPhone 12 Pro` have the same problem with the form background, but the footer contents align as they should do. So, I intend to make another media query for devices that have a width smaller than 389px to fix the footer problem, which is to just make the text smaller so that the elements align together properly. There are no other issues on the other pages, so the footer should be fixed across all pages.
+
+![iphone 12 pro and pixel 5 signup page](/docs/iphone%2012%20pro%20and%20pixel%205%20form.png)
+
+![fixed footer  on iphone se and galaxy s8+](/docs/fixed%20footer%20on%20iphone%20se%20and%20galaxy%20s8+.png)
+
+The `Galaxy Fold` is a unique situation as it has the smallest width size, so a media query for its own width (280px) will be created. By decreasing the width size of the sign up form to fit with the width of the screen, and decreasing the text size of the footer, the contents of the page now neatly aligns together for a cleaner look.
+
+![problem with galaxy fold width](/docs/galaxy%20fold%20problem.png)
+
+![galaxy fold footer and sign up form fixed](/docs/galaxy%20fold%20media%20query%20fix.png)
+
+
 # Deployment
 My website was deployed through GitHub Pages. To deploy it, these steps were followed:
 * Open the GitHub Repository
