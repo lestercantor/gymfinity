@@ -99,6 +99,30 @@ Whilst validating all of my pages, I came across these errors in the sign up pag
 ![css validation pass](docs/css-validation.png)
 Passing my direct code through [w3c jigsaw css validator](https://jigsaw.w3.org/css-validator/validator), my CSS stylesheet passed with no errors found.
 
+# Responsiveness Testing
+For the responsiveness testing, I mainly used the dimensions for Samsung Galaxy A51/71, as I assume my intended audience will have a modern and affordable smartphone. I collapsed the navigation bar, as the texts and buttons would fill up the top of the user's screen, making for a bad user experience.
+![mobile navbar](/docs/collapsed%20navbar.png)
+When the user presses the burger icon, the navigation bar reveals the other pages that the user can navigate to: 
+![revealed mobile navbar](/docs/revealed%20navbar.png)
+
+### Home Page
+In my mobile wireframe mockup, I removed the centre image on the four reasons to join section, as it would have been too bulky and ultimately make the text unreadable. I had intended to keep the image there, but went back on the decision because of the reason before. Now the mobile user experience looks like this:
+![mobile home page screenshot](/docs/mobile%20home%20page.png)
+
+As well as this, the desktop version of the classes were laid out horizontally. This was not going to work in the mobile experience, so I laid them out vertically and making sure the spacing for each box was even.
+![mobile classes layout screenshot](/docs/mobile%20classes.png)
+
+At the very bottom, the user is still able to see the footer and all of its contents. Since the styling and layout are used across all pages, the look of the footer will remain the same across all pages as well.
+![mobile footer](/docs/mobile%20footer.png)
+
+### Equipment & Facilities Page
+In the equipment & facilities page, the user is still able to clearly see the gym equipment, even though the images on the carousel are made smaller to fit the screen for the smartphone. On the desktop version, the facilities of the gym could fit in one row, but on the mobile screen, I made sure to fit the text and icons into two rows, so the icons and text would not have to shrink.
+![mobile equipment & facilities](/docs/mobile%20equipment&facilities.png)
+The carousel component still works on the mobile screen as the Bootstrap framework is designed to be responsive.
+
+### Sign Up Page
+The sign up form is now centred on the mobile screen instead of it being offset like the desktop.
+![mobile sign up page](/docs/mobile%20sign%20up%20page.png)
 # Deployment
 My website was deployed through GitHub Pages. To deploy it, these steps were followed:
 * Open the GitHub Repository
