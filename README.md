@@ -51,24 +51,52 @@ There is a footer for social media links and the basic information about the gym
 
 ## Carousel showcasing gym equipment
 In the wireframe mockup, I have a boxed section dedicated to showcase the equipment provided. My idea was to have a carousel of images showing gym equipment (taken from a royalty free website) and the user can click/tap the arrows to scroll through the images easily. This could be done through Bootstrap as it has simple carousel component which can be found through [this link](https://getbootstrap.com/docs/5.0/components/carousel/). 
-Some of the images that were part of the carousel blended in with the carousel slider arrows which did not make for a good user experience. As such, I used darker arrows and lighter images to contrast each other making it clearly visible to the user. 
+Some of the images that were part of the carousel blended in with the carousel slider arrows which did not make for a good user experience. As such, I used darker arrows and lighter images to contrast each other making it clearly visible to the user. Lastly, I made sure the images in the carousel were the same dimensions so that when the user navigates through the different images in the carousel, the page would not have to adjust depending on the different sized image. Having that section of the page adjust whenever a user would scroll to an image would make for a bad user experience as they would see the container get smaller and bigger as they preview the equipment.
 
-As a side note: since the carousel is a component of Bootstrap, the only colours they provide are black and white, where black has to be specified through the class "carousel-dark". With some research, I found that you can change the colour of the carousel slider arrow by overriding the class "carousel-control-next-icon" and giving it the background image of: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")` - changing `fill='%23xxx'`, where xxx is a hexadecimal colour code.
+As a side note: since the carousel is a component of Bootstrap, the only colours they provide are black and white, where black has to be specified through the class "carousel-dark". With some research, I found that you can change the colour of the carousel slider arrow by overriding the class "carousel-control-next-icon" and giving it the background image of: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")` - changing `fill='%23xxx'`, where xxx is a hexadecimal colour code. Credit to this [video](https://www.youtube.com/watch?v=ue-xn_x3ZT0)
+
+# User Story Testing 
+**As a first-time visitor, I want to easily find information about the gym (location and opening hours) so that I can make a decision to join**
+As soon as the user enters the website, they can clearly see what the gym has to offer with information about flexibility and support from a personal trainer, should they have the need. Scrolling down to the footer, I can see the contact information and location of the gym.
+![home page screenshot](/docs/user%20story%201.png)
+
+As the site owner, I feel that having the location and contact information in the footer across all pages makes it easier so the user does not have to go to a specific page to find the information. Although, the user may not see that information at first, I believe that encouraging them to join the gym should be the first thing that sticks out when opening the website so that the user feels more inclined to join.
+![home page footer screenshot](/docs/footer.png)
+
+
+**As a first-time visitor, I want to see pictures of the equipment the gym provides**
+As a user, I can clearly see the navigation bar at the top, with text that says "Equipment & Facilities". Upon clicking/tapping that text, I am taken to a page where I can clearly see gym equipment, with faint arrows indicating there's more pictures to be shown. 
+![equipment carousel](/docs/equipment-facilities1.png)
+
+Scrolling down slightly, I can clearly see facilities the gym provides with appropriate icons to further capture the different facilities.
+![facilities the gym provides](/docs/equipment-facilities2.png)
+
+**As a first-time visitor, I want to easily find the sign up page**
+As a user, I can clearly see the navigation bar at the top, with text that says "Sign In / Sign Up" and on the initial landing page there is a big green button that says "Sign Up!". Clicking on the button brings me to this page: 
+![sign up page](/docs/signup.png)
+
+**As a first-time or recurring visitor, I want to easily find information on the classes and their schedule**
+As a user, I can find the classes and schedule by scrolling down from the Home page. As a recurring visitor, having it stay in the same page means I know where to look should I need a reminder of what is happening on that day. 
+
+As the site owner, developing a dynamic schedule which updates regularly would be difficult and out of my scope, so I have decided to have a static schedule based on my own routine. If I were to update the schedule, I would keep the section where it is on the page so that recurring visitors can instinctively scroll down to the section.
+
+**As a recurring visitor, I want everything that I saw the first time I visited**
+As a recurring user, the information I have seen the first time I visited is still there. 
 
 # Validator Testing
 ### HTML Validation
-![Alt text](docs/errors.png)
+![errors in html validator testing](docs/errors.png)
 
 From the [w3c validator website](https://validator.w3.org/nu/?doc=https%3A%2F%2Flestercantor.github.io%2Fgymfinity%2Findex.html), I have errors and warnings about duplicate ID's used, however, I am not sure of a solution to the problem as I needed the same styles for the tags that were used. Since I needed the same styles for the footers, the same errors and warnings are across each page. Another issue I am not sure of how to fix is to make the paragraph tag in the footer to be part of the unordered list, as I needed the list style and tags to make the footer content as it is.
 
 To fix these errors, I realised that ID's are used for unique changes, so having multiple ID's being used was against the validity in the HTML validation. My solution to fix this was to make them a class so that multiple elements can have the styling that I want. 
 The other I needed to fix were 2 cases of where a `p` element was not a child of the `li` element. My solution was to make the `p` element a child of an `li` element, the `ul` element expects an `li` element as its child - which lets me embed a `p` element inside the `li` element so that I can keep the layout as it was before whilst maintaining validity. Since this was an error in the footer, which I have across all pages, the changes have been adjusted to each page. 
 
-![Alt text](docs/signup-page-validation.png)
+![errors in html sign up page validator testing](docs/signup-page-validation.png)
 Whilst validating all of my pages, I came across these errors in the sign up page. Being able to validate through direct input makes it easier to see HTML errors so that they can be easily rectified without waiting for deployment. These particular errors were easy to fix as I just needed to delete trailing slashes and a rogue </i> on line 33 as mentioned by the validator. 
 
 ### CSS Validation
-![Alt text](docs/css-validation.png)
+![css validation pass](docs/css-validation.png)
 Passing my direct code through [w3c jigsaw css validator](https://jigsaw.w3.org/css-validator/validator), my CSS stylesheet passed with no errors found.
 
 # Deployment
